@@ -59,6 +59,15 @@
             //shadowAnchor: [32, 64],  // idem pour l'ombre
             popupAnchor: [8,0] // point depuis lequel la popup doit s'ouvrir relativement à l'iconAnchor
         });
+            var customIcon_tirelire = L.icon({
+            iconUrl: 'images_appli/357A.tmp.png',
+            //shadowUrl: 'icon-shadow.png',
+            iconSize: [48, 48], // taille de l'icone
+            //shadowSize:   [50, 64], // taille de l'ombre
+            iconAnchor: [12, 12], // point de l'icone qui correspondra à la position du marker
+            //shadowAnchor: [32, 64],  // idem pour l'ombre
+            popupAnchor: [8,0] // point depuis lequel la popup doit s'ouvrir relativement à l'iconAnchor
+        });
         // décalage entre coordonnées google maps et openstreetmap : +0.0085 longitude
         L.marker([42.9765688, -0.348449 + 0.0085], { icon: customIcon }).addTo(map).bindPopup("<b>Col d'Aubisque</b>");//Col d'Aubisque 
         L.marker([42.8009191,0.4538388 + 0.0085], { icon: customIcon }).addTo(map).bindPopup("<b>Col de Peyresourde</b>");//Col de Peyresourde
@@ -140,7 +149,10 @@
         L.marker([47.8335,-2.656 + 0.008], { icon: customIcon }).addTo(map).bindPopup("<b>C&ocircte de Cadoudal, Plumelec</b>");//Côte de Cadoudal, Plumelec
         L.marker([45.0812039,3.935 + 0.008], { icon: customIcon }).addTo(map).bindPopup("<b>Mont B&ecirct</b>");//Mont Bêt
         L.marker([45.0683878,4.112 + 0.008], { icon: customIcon }).addTo(map).bindPopup("<b>Col de Raffy</b>");//Col de Raffy
-        L.marker([45.4955569,4.7000109 + 0.008], { icon: customIcon }).addTo(map).bindPopup("<b>Col de Chassenoud</b>");//Col de Chassenoud 
+        L.marker([45.4955569,4.7000109 + 0.008], { icon: customIcon }).addTo(map).bindPopup("<b>Col de Chassenoud</b>");//Col de Chassenoud
+        L.marker([43.0111221,-0.2277472 + 0.008], { icon: customIcon }).addTo(map).bindPopup("<b>Col de Spandelles</b>");//Col de Spandelles
+        //blague
+        L.marker([48.9168661,1.8617634 + 0.008], { icon: customIcon_tirelire }).addTo(map).bindPopup("<b>Cocircte de la Beulle</b>");//Côte de la Beulle
         //cols RAF
         L.marker([44.1740833,5.2611701 + 0.0085], { icon: customIcon_RAF }).addTo(map).bindPopup("<b>Mont Ventoux</b>");//Mont Ventoux
         L.marker([45.0640968,6.3902212 + 0.0085], { icon: customIcon_RAF }).addTo(map).bindPopup("<b>Col du Galibier</b>");//Galibier
